@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?t=33ee44rr55tt">
+    <link rel="icon" type="image/png" href="img/bookLogo2.png"  />
+    <script defer src="js/sweetalert2@11.js?t=swett15"></script>
+    <script defer src="js/main.js?t=sweetltimelh"></script>
+    <title>Bookstore</title>
+</head>
+<body>
+       <header>
+            <div class="container">
+                <div class="header-top">
+                    <a href="index.html" class="logo-container">
+                        <p>Books</p>
+                        <img src="img/bookLogo2.png" alt="">
+                    </a>
+                    <div class="cart-container">
+                        <img src="img/cart.png" alt="">
+                        <p>Cart (<span id="counter-cart"> </span>)</p> 
+                    </div>
+                </div>
+            </div>
+       </header>
+       <main>
+            <div class="container">
+                <section class="banner">
+                        <div>
+                            <img src="img/language.png" alt="">
+                            <p>Books in all languages</p>
+                        </div>
+                        <div>
+                            <img src="img/delivery.png" alt="">
+                            <p>Free Shipping</p>
+                        </div>
+                        <div>
+                            <img src="img/feedback.png" alt="">
+                            <p>The best reviews</p>
+                        </div>
+                </section>
+                <section class="carousel">
+                        <div class="arrow-left">
+                            <img id="carousel-left" src="img/arrow.png" alt="">
+                        </div>
+                        <div class="arrow-right">
+                            <img id="carousel-right" src="img/arrow.png" alt="">
+                        </div>
+                
+                    <div id="carousel-img" data-img="1" class="carousel-item"></div>
+                </section>
+                <section class="list-book">
+                    <h1>TOP TITLES TODAY</h1>
+                    <div id="containerBooks" class="container-books">
+                        <div data-bookItem="1" class="book-item">
+                            <img data-bookimg="1" src="img/1.webp" alt="">
+                            <p>$7.99</p>
+                            <button data-book="1" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="2" class="book-item">
+                            <img data-bookimg="2" src="img/2.webp" alt="">
+                            <p>$9.49</p>
+                            <button data-book="2">Add to Cart</button>
+                        </div>
+                        <div data-bookItem="3" class="book-item">
+                            <img data-bookimg="3" src="img/3.webp" alt="">
+                            <p>$6.99</p>
+                            <button data-book="3" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="4" class="book-item">
+                            <img data-bookimg="4" src="img/4.webp" alt="">
+                            <p>$6.49</p>
+                            <button data-book="4" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="5" class="book-item">
+                            <img data-bookimg="5" src="img/5.webp" alt="">
+                            <p>$5.99</p>
+                            <button data-book="5" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="6" class="book-item">
+                            <img data-bookimg="6" src="img/6.webp" alt="">
+                            <p>$6.99</p>
+                            <button data-book="6" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="7" class="book-item">
+                            <img data-bookimg="7" src="img/7.webp" alt="">
+                            <p>$9.49</p>
+                            <button data-book="7" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="8" class="book-item">
+                            <img data-bookimg="8" src="img/8.webp" alt="">
+                            <p>$8.49</p>
+                            <button data-book="8" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="9" class="book-item">
+                            <img data-bookimg="9" src="img/9.webp" alt="">
+                            <p>$11.99</p>
+                            <button data-book="9" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="10" class="book-item">
+                            <img data-bookimg="10" src="img/10.webp" alt="">
+                            <p>$6.49</p>
+                            <button data-book="10" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="11"" class="book-item">
+                            <img data-bookimg="11" src="img/11.webp" alt="">
+                            <p>$7.99</p>
+                            <button data-book="11" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="12"" class="book-item">
+                            <img data-bookimg="12" src="img/12.webp" alt="">
+                            <p>$8.49</p>
+                            <button data-book="12" >Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="list-book">
+                    <h1>KIDS' EASTER</h1>
+                    <div id="containerBooksKids" class="container-books">
+                        <div data-bookItem="13"class="book-item-kids book-item">
+                            <img data-bookimg="13" src="img/1kids.webp" alt="">
+                            <p>$4.49</p>
+                            <button data-book="13" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="14"class="book-item-kids book-item">
+                            <img data-bookimg="14" src="img/2kids.webp" alt="">
+                            <p>$4.99</p>
+                            <button data-book="14" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="15"class="book-item-kids book-item">
+                            <img data-bookimg="15" src="img/3kids.webp" alt="">
+                            <p>$3.99</p>
+                            <button data-book="15" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="16"class="book-item-kids book-item">
+                            <img data-bookimg="16" src="img/4kids.webp" alt="">
+                            <p>$2.99</p>
+                            <button data-book="16" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="17"class="book-item-kids book-item">
+                            <img data-bookimg="17" src="img/5kids.webp" alt="">
+                            <p>$3.49</p>
+                            <button data-book="17" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="18"class="book-item-kids book-item">
+                            <img data-bookimg="18" src="img/6kids.webp" alt="">
+                            <p>$4.99</p>
+                            <button data-book="18" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="19"class="book-item-kids book-item">
+                            <img data-bookimg="19" src="img/7kids.webp" alt="">
+                            <p>$3.49</p>
+                            <button data-book="19" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="20"class="book-item-kids book-item">
+                            <img data-bookimg="20" src="img/8kids.webp" alt="">
+                            <p>$3.99</p>
+                            <button data-book="20" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="21"class="book-item-kids book-item">
+                            <img data-bookimg="21" src="img/9kids.webp" alt="">
+                            <p>$4.49</p>
+                            <button data-book="21" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="22" class="book-item-kids book-item">
+                            <img data-bookimg="22" src="img/10kids.webp" alt="">
+                            <p>$3.49</p>
+                            <button data-book="22" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="23" class="book-item-kids book-item">
+                            <img data-bookimg="23" src="img/11kids.webp" alt="">
+                            <p>$3.99</p>
+                            <button data-book="23" >Add to Cart</button>
+                        </div>
+                        <div data-bookItem="24" class="book-item-kids book-item">
+                            <img data-bookimg="24" src="img/12kids.webp" alt="">
+                            <p>13.99zł</p>
+                            <button data-book="24" >Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="book-desc">
+                    <img class="arrowback" id="arrowBackDesc" src="img/arrowback.png" alt="">
+                    <div class="container-all">
+                        <div class="imgBook">
+                            <img id="imgBookDesc" src="" alt="">
+                        </div>
+                        <div class="descBook">
+                            <div class="container-descBook-p">
+                                <p class="title" id="titleBook"></p>
+                                <p class="author">by <span id="author"></span></p>
+                                <p class="price">Price <span id="cena"></span></p>
+                            </div>
+                            <button id="btnDesc">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h2 class="title-about">About</h2>
+                        <p id="aboutText"></p>
+                    </div>
+                </section>
+                <section class="cart">
+                    <img class="arrowback" id="arrowBackCart" src="img/arrowback.png" alt="">
+                    <div class="empty-cart">
+                        <p>Your Shopping Cart is Empty!</p>
+                        <p>Continue Shopping.</p>
+                        <img src="img/sadSmile.png" alt="">
+                    </div>
+                    <div class="all-cart">
+                        <p class="your_shopping_cart">Your Shopping Cart</p>
+                        <div class="all-cart-container">
+                            <div class="all-cart-title">
+                                <p class="text-all-cart-title items">Items</p>
+                                <p class="text-all-cart-title ">Price</p>
+                                <p class="text-all-cart-title ">Quantity</p>
+                                <p class="text-all-cart-title">Total</p>
+                            </div>
+                            <div class="all-cart-items">
+
+                            </div>
+                        </div>
+                        <p class="estimated-total" >Estimated Total: <span id="estimatedTotal">$0</span></p>
+                        <div class="buy">
+                            <h2>Contacts for sending the order</h2>
+                            <form id="orderForm">
+                                <div >
+                                    <label for="firstName">First name:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div >
+                                    <label for="lastName">Last name:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                                <div >
+                                    <label for="Delivery">Delivery address:</label>
+                                    <input type="text" id="Delivery" name="Delivery" required>
+                                </div>
+                                <div >
+                                    <label for="reminder">Payment</label>
+                                    <select id="reminder" name="reminder">
+                                        <option value="none">Cash</option>
+                                        <option value="daily">Card</option>
+                                    </select>
+                                </div>
+                                <p class="totalSummBook" >Estimated Total: <span id="estimatedTotal2">$9.49</span></p>
+                                <button id="byeCart" type="submit">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+       </main>
+       <footer>
+            <div class="container">
+                <div class="footer-links">
+                    <a href="index.html" class="logo-container">
+                        <p class="footer-logo-text">Books</p>
+                        <img class="logo-footer" src="img/logo-footer.png" alt="">
+                    </a>
+                    <div class="linki-right">
+                        <a href="https://www.instagram.com/dianamartynenko_/" class="sity insta" target="_blank">
+                            <img src="img/insta.png?t=1" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/" class="sity facebook" target="_blank">
+                            <img src="img/facebook.png?t=1" alt="">
+                        </a>
+                        <a href="https://twitter.com/i/flow/login" class="sity twiter" target="_blank">
+                            <img src="img/twitter.png?t=1" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+       </footer>
+</body>
+</html>
