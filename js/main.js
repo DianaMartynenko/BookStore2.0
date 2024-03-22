@@ -411,22 +411,40 @@ function arrowBack(type) {
     restoreScrollPosition();
 }
 
+//wyłącz opcję dodania poprzedniego dnia
+
+const today = new Date().toISOString().split('T')[0];
+document.getElementById('dateInput').setAttribute("min", today);
+
 // kupić koszyk 
+
 document.getElementById('orderForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    
-    Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Thanks for the purchase",
-        showConfirmButton: false,
-        timer: 1500
-      });
-    localStorage.removeItem('books');
-    setTimeout(() => {
-        window.location.reload();
-    }, 1501);
+    event.preventDefault();
+    const selectedDate = document.getElementById('dateInput').value;
+    if(document.getElementById('estimatedTotal2').innerHTML == '$0.00'){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Empty shopping cart",
+          });
+    }else{
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Thanks for the purchase",
+            text: "Wait for the courier on " + selectedDate,
+            showConfirmButton: false,
+            timer: 1500
+          });
+        localStorage.removeItem('books');
+        setTimeout(() => {
+            window.location.reload();
+        }, 1501);
+    }
+
 });
+
+
 
 
 

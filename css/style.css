@@ -40,6 +40,16 @@ input[type="text"] {
     color: #333; 
     outline: none; 
 }
+input[type="date"] {
+    width: 200px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px;
+    color: #333; 
+    outline: none; 
+    font-family: "Montserrat", sans-serif;
+}
 
 input[type="text"]:focus {
     border-color: #007bff; 
@@ -389,7 +399,7 @@ footer{
 }
 
 #orderForm div {
-    max-width: 350px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
