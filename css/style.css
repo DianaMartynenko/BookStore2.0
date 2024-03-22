@@ -413,6 +413,7 @@ footer{
     border: 1px solid #0000002b;
     cursor: pointer;
     transition: all .3s ;
+    color: black;
 }
 
 #orderForm button:hover {
